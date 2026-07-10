@@ -1,1 +1,324 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.786d1247.js"></script><link href="/static/css/main.f855e6bc.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kylie O'Donnell | Design Portfolio</title>
+    <meta
+      name="description"
+      content="Product UI, graphic design, social media, print, and case-study work by Kylie O'Donnell."
+    />
+    <meta property="og:title" content="Kylie O'Donnell | Design Portfolio" />
+    <meta
+      property="og:description"
+      content="Design-focused computer science graduate with product UI, graphic design, print, and social media work."
+    />
+    <meta property="og:image" content="assets/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero-shell" id="top" aria-labelledby="intro-title">
+        <nav class="topbar" aria-label="Portfolio sections">
+          <a class="brand" href="#top">Kylie O'Donnell</a>
+          <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="desktop-window">
+          <div class="window-chrome" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>portfolio-for-resume.site</strong>
+          </div>
+
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="kicker">Design-focused computer science graduate</p>
+              <h1 id="intro-title">Designer with a computer science backbone.</h1>
+              <p class="hero-text">
+                I build visual systems, product flows, social graphics, print
+                materials, and case studies with a mix of design judgment and
+                implementation fluency.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#work">View selected work</a>
+                <a
+                  class="button"
+                  href="https://www.linkedin.com/in/kylieodonnell/"
+                  target="_blank"
+                  rel="noreferrer"
+                >LinkedIn</a>
+              </div>
+            </div>
+
+            <div class="hero-proof" aria-label="Portfolio summary">
+              <img
+                src="assets/portfolio/la-4.jpg"
+                alt="Figma prototype flow from Kylie's portfolio"
+              />
+              <div class="proof-grid">
+                <span>Product UI</span>
+                <span>Social design</span>
+                <span>Print systems</span>
+                <span>Case studies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" aria-label="About Kylie">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Cal Poly SLO computer science graduate, December 2024.</h2>
+        </div>
+        <p>
+          My work sits between design and development: translating ideas into
+          clean UI systems, production-ready graphics, and stories that explain
+          the user problem clearly. I am especially interested in roles where
+          product thinking, visual design, and technical context overlap.
+        </p>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="section-label">Selected work</p>
+          <h2 id="work-title">Product, digital, and graphic design.</h2>
+        </div>
+
+        <div class="featured-grid">
+          <article class="feature-card">
+            <img
+              src="assets/portfolio/la-7.jpg"
+              alt="Kennedy Library occupancy counter portfolio page"
+            />
+            <div class="feature-body">
+              <p class="eyebrow">Product case study</p>
+              <h3>Kennedy Library occupancy counter</h3>
+              <p>
+                A web-based concept for helping Cal Poly students make faster
+                study-space decisions using clearer occupancy information and
+                API-backed data.
+              </p>
+              <div class="tag-row">
+                <span>Research</span>
+                <span>Information design</span>
+                <span>Web concept</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <img
+              src="assets/portfolio/la-3.jpg"
+              alt="Productivity tracker design system portfolio page"
+            />
+            <div class="feature-body">
+              <p class="eyebrow">Digital design system</p>
+              <h3>Productivity tracker system</h3>
+              <p>
+                Typography, color, components, buttons, icons, and form states
+                for a focused productivity tracking experience.
+              </p>
+              <div class="tag-row">
+                <span>Design system</span>
+                <span>Components</span>
+                <span>Figma</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <img
+              src="assets/portfolio/la-5.jpg"
+              alt="Crib onboarding flow portfolio page"
+            />
+            <div class="feature-body">
+              <p class="eyebrow">Mobile UI</p>
+              <h3>Crib onboarding flow</h3>
+              <p>
+                High-fidelity mobile screens for account creation, welcome-back
+                moments, and a clean first-run product path.
+              </p>
+              <div class="tag-row">
+                <span>Mobile UI</span>
+                <span>Hi-fi screens</span>
+                <span>Flow</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" aria-labelledby="demo-title">
+        <div>
+          <p class="section-label">Demos and prototypes</p>
+          <h2 id="demo-title">Built to support Figma files and video demos.</h2>
+        </div>
+        <div class="demo-panel">
+          <a
+            href="https://figmashort.link/piHr8Z"
+            target="_blank"
+            rel="noreferrer"
+          >Open prototype from current portfolio</a>
+          <span>Additional video demo links can be added here.</span>
+          <span>Additional Figma flows and social graphics can be added here.</span>
+        </div>
+      </section>
+
+      <section class="section visual-section" aria-labelledby="visual-title">
+        <div class="section-heading">
+          <p class="section-label">Visual design range</p>
+          <h2 id="visual-title">Campaigns, pitch materials, and editorial work.</h2>
+        </div>
+
+        <div class="visual-grid">
+          <article class="visual-card">
+            <img
+              src="assets/portfolio/graphic-3.jpg"
+              alt="Seattle Voice Lab social design examples"
+            />
+            <div>
+              <h3>Seattle Voice Lab social design</h3>
+              <p>
+                Instagram, Discord, TikTok, LinkedIn, and newsletter graphics
+                built for internal and external audiences.
+              </p>
+            </div>
+          </article>
+
+          <article class="visual-card">
+            <img
+              src="assets/portfolio/graphic-4.jpg"
+              alt="GreenSight pitch and social graphics examples"
+            />
+            <div>
+              <h3>GreenSight pitch and social graphics</h3>
+              <p>
+                Quick-turn marketing visuals, a trifold pitch poster, and Figma
+                product brainstorming during a software development internship.
+              </p>
+            </div>
+          </article>
+
+          <article class="visual-card">
+            <img
+              src="assets/portfolio/graphic-5.jpg"
+              alt="Cal Poly CPE event materials examples"
+            />
+            <div>
+              <h3>Cal Poly CPE event materials</h3>
+              <p>
+                Banquet graphics, programs, posters, videos, department posts,
+                newsletters, and site updates for the Computer Science
+                department.
+              </p>
+            </div>
+          </article>
+
+          <article class="visual-card">
+            <img
+              src="assets/portfolio/graphic-6.jpg"
+              alt="Editorial and experimental graphics examples"
+            />
+            <div>
+              <h3>Editorial and experimental graphics</h3>
+              <p>
+                Magazine covers, zines, band posters, Illustrator experiments,
+                and infographics with a strong editorial point of view.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section experience-section"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-heading">
+          <p class="section-label">Experience</p>
+          <h2 id="experience-title">Design work in real production settings.</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <p class="eyebrow">Jul 2020 - Present</p>
+            <h3>Social Media Assistant</h3>
+            <strong>Seattle Voice Lab</strong>
+            <p>
+              Designs social graphics and newsletters across Instagram,
+              Discord, TikTok, LinkedIn, and email.
+            </p>
+          </article>
+
+          <article>
+            <p class="eyebrow">Jun 2024 - Sep 2024</p>
+            <h3>Software Development Intern</h3>
+            <strong>GreenSight</strong>
+            <p>
+              Created pitch materials, quick-turn graphics, Figma feature
+              explorations, and responsive JSX interface updates.
+            </p>
+          </article>
+
+          <article>
+            <p class="eyebrow">Sep 2022 - Dec 2024</p>
+            <h3>Student Administrative Assistant</h3>
+            <strong>Cal Poly CPE Department</strong>
+            <p>
+              Produced banquet, social, newsletter, video, WordPress, and
+              SharePoint materials for the department.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" aria-labelledby="skills-title">
+        <div>
+          <p class="section-label">Tools and strengths</p>
+          <h2 id="skills-title">
+            Design systems, visual storytelling, and implementation context.
+          </h2>
+        </div>
+        <div class="skill-cloud">
+          <span>Figma</span>
+          <span>Adobe Photoshop</span>
+          <span>Adobe InDesign</span>
+          <span>Adobe Illustrator</span>
+          <span>React</span>
+          <span>JSX</span>
+          <span>WordPress</span>
+          <span>SharePoint</span>
+          <span>Social graphics</span>
+          <span>Print design</span>
+          <span>Wireframes</span>
+          <span>User flows</span>
+        </div>
+      </section>
+
+      <footer class="footer" id="contact">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>Let's connect.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:mmbodonnell@gmail.com">mmbodonnell@gmail.com</a>
+          <a
+            href="https://www.linkedin.com/in/kylieodonnell/"
+            target="_blank"
+            rel="noreferrer"
+          >linkedin.com/in/kylieodonnell</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
