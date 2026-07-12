@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kennedy Library Occupancy Counter | Kylie O'Donnell</title>
+    <meta
+      name="description"
+      content="A product case study for a Kennedy Library occupancy counter concept by Kylie O'Donnell."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="project-page">
+    <main>
+      <nav class="topbar" aria-label="Portfolio navigation">
+        <a class="brand" href="index.html">Kylie O'Donnell</a>
+        <div class="nav-links">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+
+      <section class="section project-hero">
+        <div>
+          <p class="section-label">Product case study</p>
+          <h1>Kennedy Library occupancy counter</h1>
+          <p>
+            A web-based occupancy tool designed to help Cal Poly students find
+            available study space before walking through every floor of the
+            library.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button primary"
+              href="assets/portfolio/Kennedy Library Occupancy Counter- Senior Project Paper .pdf"
+              target="_blank"
+              rel="noreferrer"
+            >Open project PDF</a>
+          </div>
+        </div>
+        <img
+          src="assets/portfolio/Kennedy Library Occupancy Counter Frame3.png"
+          alt="Kennedy Library occupancy counter portfolio page"
+        />
+      </section>
+
+      <section class="section project-details" aria-label="Project details">
+        <article>
+          <h2>Focus</h2>
+          <p>
+            Real-time occupancy visibility, floor-by-floor wayfinding, and
+            study room availability for the renovated Kennedy Library.
+          </p>
+        </article>
+        <article>
+          <h2>Role</h2>
+          <p>
+            Researched existing occupancy tools, designed and built the
+            prototype, hosted it in WordPress, and iterated from user testing.
+          </p>
+        </article>
+        <article>
+          <h2>Tools</h2>
+          <p>Figma, HTML, CSS, JavaScript, WordPress, mock API-style data, and user testing.</p>
+        </article>
+      </section>
+
+      <section class="section project-writeup" aria-labelledby="kennedy-writeup-title">
+        <div class="section-heading">
+          <p class="section-label">Case study</p>
+          <h2 id="kennedy-writeup-title">Making library capacity easier to understand.</h2>
+        </div>
+
+        <article>
+          <h3>Problem</h3>
+          <p>
+            While Kennedy Library was under renovation, students had to rely on
+            temporary study spaces and scattered occupancy information. Existing
+            campus counters were hard to find, inconsistent across spaces, and
+            did not explain which parts of the library were actually usable. The
+            goal was to make occupancy information visible from the Kennedy
+            Library website so students could decide where to study before
+            spending time searching in person.
+          </p>
+        </article>
+
+        <article>
+          <h3>Approach</h3>
+          <p>
+            I designed the counter around two levels of decision-making: a quick
+            overview of all five floors, then a detailed floor view with area
+            density and study room availability. The concept was based around
+            Occuspace, a privacy-conscious occupancy sensing system that can
+            provide real-time and historical count estimates through an API.
+          </p>
+        </article>
+
+        <article>
+          <h3>Implementation</h3>
+          <p>
+            I built the prototype with HTML, CSS, and JavaScript. Because I did
+            not have access to live Occuspace devices, I modeled the data using
+            rotating mock datasets that updated every ten seconds. Each dataset
+            included floor occupancy percentages, study room availability, and
+            mapped floor areas that could be represented as a heat map.
+          </p>
+        </article>
+
+        <article>
+          <h3>Testing and iteration</h3>
+          <p>
+            I tested the prototype with students and faculty through a feedback
+            form covering usability, visual design, functionality, and overall
+            usefulness. Early feedback showed that the main idea was useful, but
+            some users were confused by the heat map colors, the relationship
+            between floor colors and study rooms, and how to navigate back from
+            a floor detail view. I added clearer instructions, refined the color
+            explanations, removed the original back button pattern, and adjusted
+            the UI to make the interaction feel more standard.
+          </p>
+        </article>
+
+        <article>
+          <h3>Outcome</h3>
+          <p>
+            Users rated the final prototype an average of 4.11 out of 5 across
+            purpose, findability, layout, visual appeal, and usability. The most
+            common positive feedback was that the counter would help students
+            decide where to go during crowded periods, especially because it
+            combined a whole-library overview with more specific floor and room
+            information.
+          </p>
+        </article>
+
+        <article>
+          <h3>Future work</h3>
+          <p>
+            The next step would be connecting the interface to real Occuspace
+            data and the library's study room booking system. I also planned for
+            a denser sensor layout across the five floors so the heat maps could
+            show area-level crowding instead of only general floor percentages.
+          </p>
+        </article>
+      </section>
+
+      <section class="section project-image-grid" aria-label="Project images">
+        <img
+          src="assets/portfolio/Kennedy Library Occupancy Counter Frame2.png"
+          alt="Kennedy Library occupancy counter design frame"
+        />
+        <img
+          src="assets/portfolio/Kennedy Library Occupancy Counter Frame3.png"
+          alt="Kennedy Library occupancy counter design frame"
+        />
+        <img
+          src="assets/portfolio/Kennedy Library Occupancy Counter Frame4.png"
+          alt="Kennedy Library occupancy counter design frame"
+        />
+      </section>
+
+      <section class="section project-pdf" aria-labelledby="kennedy-pdf-title">
+        <div class="section-heading">
+          <p class="section-label">Full writeup</p>
+          <h2 id="kennedy-pdf-title">Senior project paper</h2>
+        </div>
+        <object
+          data="assets/portfolio/Kennedy Library Occupancy Counter- Senior Project Paper .pdf"
+          type="application/pdf"
+        >
+          <p>
+            The PDF preview is unavailable in this browser.
+            <a href="assets/portfolio/Kennedy Library Occupancy Counter- Senior Project Paper .pdf">
+              Open the project PDF.
+            </a>
+          </p>
+        </object>
+      </section>
+    </main>
+  </body>
+</html>
