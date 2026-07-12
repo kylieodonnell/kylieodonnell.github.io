@@ -2,7 +2,7 @@
   --cream: #f7edcf;
   --paper: #fff8df;
   --ink: #151826;
-  --coral: #f47f6b;
+  --coral: #E07A5F;
   --yellow: #ffe374;
   --mint: #b8eadc;
   --soft-mint: #d8f1e8;
@@ -121,7 +121,7 @@ main {
   height: 15px;
   border: 2px solid var(--ink);
   border-radius: 50%;
-  background: var(--yellow);
+  background: var(--mint);
 }
 
 .window-chrome strong {
@@ -213,6 +213,7 @@ h3 {
   display: grid;
   grid-template-rows: 1fr auto;
   min-width: 0;
+  overflow: hidden;
 }
 
 .hero-proof img {
@@ -220,7 +221,9 @@ h3 {
   height: 100%;
   min-height: 420px;
   object-fit: cover;
-  object-position: center;
+  object-position: 59% 30%;
+  transform: scale(2);
+  transform-origin: center center;
 }
 
 .proof-grid {
@@ -485,6 +488,7 @@ h3 {
 
   .hero-proof img {
     min-height: 300px;
+    transform: scale(1.08);
   }
 
   .feature-card {
