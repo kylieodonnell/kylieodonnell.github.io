@@ -378,6 +378,12 @@ a.feature-card {
   background: var(--mint);
 }
 
+.visual-card:hover div,
+.visual-card:focus-within div,
+.visual-card:focus-visible div {
+  background: var(--mint);
+}
+
 .feature-card img,
 .feature-placeholder {
   width: 100%;
@@ -1524,7 +1530,18 @@ a.feature-card {
   }
 
   .feature-card {
-    grid-template-rows: 260px 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-card img,
+  .feature-placeholder {
+    height: auto;
+    min-height: 240px;
+  }
+
+  .feature-card img {
+    object-position: center top;
   }
 
   .timeline article:last-child {
@@ -1767,7 +1784,13 @@ a.feature-card {
   }
 
   .feature-card {
-    grid-template-rows: 220px 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-card img,
+  .feature-placeholder {
+    min-height: 200px;
   }
 
   .skill-top article,
