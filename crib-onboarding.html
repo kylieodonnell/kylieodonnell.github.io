@@ -46,28 +46,40 @@
         />
       </section>
 
-      <section class="section project-details" aria-label="Project details">
+      <section class="section project-details" aria-labelledby="crib-details-title">
+        <div class="section-heading">
+          <p class="section-label">Project details</p>
+          <h2 id="crib-details-title">Mobile-first onboarding decisions.</h2>
+        </div>
         <article>
-          <h2>Focus</h2>
+          <h3>Focus</h3>
           <p>
             Designed a mobile-first onboarding flow with clear account creation
             steps, household setup, and room for future content states.
           </p>
         </article>
         <article>
-          <h2>Role</h2>
+          <h3>Role</h3>
           <p>
             Created the screen sequence, refined visual hierarchy, and mapped
             the prototype path through the main onboarding decisions.
           </p>
         </article>
         <article>
-          <h2>Tools</h2>
+          <h3>Tools</h3>
           <p>Figma, mobile UI design, user flows, and mid-fidelity prototyping.</p>
         </article>
       </section>
 
-      <section class="section project-flow" aria-labelledby="crib-flow-title">
+      <section class="section project-jump-section" aria-labelledby="crib-jump-title">
+        <p class="section-label" id="crib-jump-title">Jump to section</p>
+        <nav class="project-jump-nav" aria-label="Project sections">
+          <a href="#crib-flow">Flow</a>
+          <a href="#crib-screens">Screens</a>
+        </nav>
+      </section>
+
+      <section class="section project-flow" id="crib-flow" aria-labelledby="crib-flow-title">
         <div class="section-heading">
           <p class="section-label">Prototype flow</p>
           <h2 id="crib-flow-title">Overall Figma flow</h2>
@@ -78,16 +90,26 @@
         />
       </section>
 
-      <section class="section project-image-grid crib-screen-grid" aria-label="Crib app screens">
-        <img src="assets/portfolio/crib- welcome.png" alt="Crib welcome screen" />
-        <img src="assets/portfolio/crib- sign up.png" alt="Crib sign up screen" />
-        <img src="assets/portfolio/crib- login.png" alt="Crib login screen" />
-        <img
-          src="assets/portfolio/crib- join household.png"
-          alt="Crib join household screen"
-        />
-        <img src="assets/portfolio/crib- post something.png" alt="Crib post screen" />
-        <img src="assets/portfolio/crib- HISTORY.png" alt="Crib history screen" />
+      <section
+        class="section crib-screens-section"
+        id="crib-screens"
+        aria-labelledby="crib-screens-title"
+      >
+        <div class="section-heading">
+          <p class="section-label">App screens</p>
+          <h2 id="crib-screens-title">Mid-fidelity screen variations.</h2>
+        </div>
+        <div class="project-image-grid crib-screen-grid" aria-label="Crib app screens">
+          <img src="assets/portfolio/crib- welcome.png" alt="Crib welcome screen" />
+          <img src="assets/portfolio/crib- sign up.png" alt="Crib sign up screen" />
+          <img src="assets/portfolio/crib- login.png" alt="Crib login screen" />
+          <img
+            src="assets/portfolio/crib- join household.png"
+            alt="Crib join household screen"
+          />
+          <img src="assets/portfolio/crib- post something.png" alt="Crib post screen" />
+          <img src="assets/portfolio/crib- HISTORY.png" alt="Crib history screen" />
+        </div>
       </section>
 
       <footer class="project-footer">
