@@ -1362,6 +1362,29 @@ a.feature-card {
   display: block;
 }
 
+.cpe-display-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+.cpe-display-grid .section-heading {
+  grid-column: 1 / -1;
+}
+
+.cpe-display-grid object {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-height: 900px;
+  border: 3px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 8px 8px 0 var(--shadow);
+}
+
+.cpe-display-grid .project-pdf-note {
+  grid-column: 1 / -1;
+  margin-top: -4px;
+}
+
 .crib-screens-section {
   display: grid;
   gap: 18px;
