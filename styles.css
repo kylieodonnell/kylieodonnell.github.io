@@ -177,6 +177,16 @@ iframe:focus-visible {
   justify-content: center;
 }
 
+.hero-copy h1 {
+  max-width: 10ch;
+  font-size: clamp(44px, 5.4vw, 82px);
+  line-height: 0.94;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  text-wrap: balance;
+}
+
 .kicker,
 .section-label,
 .eyebrow {
