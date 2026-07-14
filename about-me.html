@@ -12,106 +12,198 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="project-page" id="top">
+    <a class="scroll-top-pill" href="#top" aria-label="Back to top">Top</a>
     <main>
       <nav class="topbar" aria-label="Portfolio navigation">
         <a class="brand" href="index.html">Kylie O'Donnell</a>
         <div class="nav-links">
-          <a href="index.html#work">Work</a>
+          <details class="nav-dropdown">
+            <summary>Work</summary>
+            <div class="nav-dropdown-menu">
+              <a href="index.html#work">Website Design</a>
+              <a href="index.html#visual-title">Visual Design</a>
+              <a href="index.html#video-title">Videos edited</a>
+            </div>
+          </details>
           <a href="index.html#skills">Tools</a>
           <a href="index.html#experience">Resume</a>
+          <a class="is-active" href="about-me.html" aria-current="page">About</a>
           <a href="index.html#contact">Contact</a>
         </div>
       </nav>
 
       <section class="section about-hero">
         <div class="about-hero-copy">
-          <p class="section-label">About</p>
-          <h1>Designing with personality, color, and a little bit of chaos.</h1>
+          <p class="section-label">About me</p>
+          <h1>Hey! How's it goin'?</h1>
           <p>
-            I like making work that feels useful, clear, and a little unexpected.
-            My style leans playful and editorial, but I also care a lot about
-            structure, accessibility, and making the idea easy to understand.
+            When I’m not designing or building something, 
+            I’m probably planning my next trip, trying a new restaurant,
+            or counting down the days until my next concert.
           </p>
           <p>
-            This page is meant to feel more personal than the portfolio home page:
-            a place for personality, favorite things, and a few photos once you
-            add them in.
+            I love traveling, spending time with family and friends, and seeing my
+            favorite artists live. There’s something so fun about going
+            from blasting a song in the car to finally hearing it
+            performed in person. My music taste is also literally all over the
+            place...
+          </p>
+          <p>
+            I’m also a huge foodie and love discovering new restaurants
+            and cuisines. I’m still learning my way around the kitchen,
+            but at least I’m very committed to the taste-testing part ;)
           </p>
         </div>
 
         <div class="about-photo-stack" aria-label="About page image placeholders">
-          <div class="about-photo-slot about-photo-slot-large">Add a hero photo here</div>
-          <div class="about-photo-row">
-            <div class="about-photo-slot">Add a favorite photo</div>
-            <div class="about-photo-slot">Add a desk or workspace photo</div>
-          </div>
+          <figure class="about-photo-frame about-photo-slot-large">
+            <img src="assets/portfolio/about%20me/kylieuhaul.JPG" alt="Kylie with a U-Haul" />
+            <figcaption>uhaul schenanigans</figcaption>
+          </figure>
         </div>
+      </section>
+
+      <section class="section about-jump-section" aria-labelledby="about-jump-title">
+        <div class="section-heading">
+          <p class="section-label" id="about-jump-title">Jump to section</p>
+          <h2>pick your favorite little corner of the page.</h2>
+        </div>
+        <nav class="project-jump-nav about-jump-nav" aria-label="About page sections">
+          <a href="#about-vibe-title">Albums</a>
+          <a href="#about-songs-title">Songs</a>
+          <a href="#about-gallery-title">Photo wall</a>
+        </nav>
       </section>
 
       <section class="section about-grid" aria-labelledby="about-vibe-title">
         <div class="section-heading">
-          <p class="section-label">My vibe</p>
-          <h2 id="about-vibe-title">A few things that shape how I work.</h2>
+          <p class="section-label">things i love at the moment <3</p>
+          <h2 id="about-vibe-title">these albums are no skips!</h2>
         </div>
 
-        <article>
-          <h3>What I make</h3>
-          <p>
-            Visual systems, product UI, social graphics, print pieces, and
-            websites that feel clean but not boring.
-          </p>
-        </article>
+        <div class="about-album-row" aria-label="Albums i love right now">
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about me/theartofloving.png" alt="The Art of Loving album cover" />
+          <figcaption>The Art of Loving- olivia dean</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about me/sunburndominicfike.jpg" alt="Sunburn by Dominic Fike album cover" />
+            <figcaption>Sunburn - dominic fike</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about me/unrealunearth.jpeg" alt="Unreal Unearth album cover" />
+            <figcaption>Unreal Unearth- hozier</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about me/yspsfagsil.png" alt="YSPFAGSIL album cover" />
+            <figcaption>you seem pretty sad for a girl so in love- olivia rodrigo</figcaption>
+          </figure>
+        </div>
+      </section>
 
-        <article>
-          <h3>How I work</h3>
-          <p>
-            I like starting with structure, then pushing the visual language a
-            little further so the result feels memorable.
-          </p>
-        </article>
+      <section class="section about-songs" aria-labelledby="about-songs-title">
+        <div class="section-heading">
+          <p class="section-label">songs i will be playing at my wedding</p>
+          <h2 id="about-songs-title">no-skip songs only.</h2>
+        </div>
 
-        <article>
-          <h3>What I care about</h3>
-          <p>
-            Clarity, hierarchy, friendly details, and work that makes people
-            want to keep looking.
-          </p>
-        </article>
-
-        <article>
-          <h3>Outside of design</h3>
-          <p>
-            Add a few personality details here, like music, shows, food,
-            hobbies, or anything else you want people to know.
-          </p>
-        </article>
+        <div class="about-song-grid" aria-label="No-skip songs">
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/forever%20and%20ever%20amen%20.jpeg" alt="Forever and Ever, Amen cover art" />
+            <figcaption>Forever and Ever, Amen - Randy Travis</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/twistinthenightaway.jpg" alt="Twistin' the Night Away cover art" />
+            <figcaption>Twistin' the Night Away - Sam Cooke</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/everydayhsm.jpg" alt="Everyday from High School Musical 2 cover art" />
+            <figcaption>Everyday - High School Musical 2</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/allyourn.jpg" alt="All Your'n cover art" />
+            <figcaption>All Your'n - Tyler Childers</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="section about-gallery" aria-labelledby="about-gallery-title">
         <div class="section-heading">
           <p class="section-label">Photo wall</p>
-          <h2 id="about-gallery-title">A place for the images you upload later.</h2>
+          <h2 id="about-gallery-title">here's a fun photo dump.</h2>
         </div>
 
         <div class="about-gallery-grid">
-          <div class="about-photo-slot about-photo-slot-tall">Upload photo 1</div>
-          <div class="about-photo-slot">Upload photo 2</div>
-          <div class="about-photo-slot">Upload photo 3</div>
-          <div class="about-photo-slot">Upload photo 4</div>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/hozier.JPG" alt="Kylie at a Hozier concert" />
+            <figcaption>Hozier Concert in lake tahoe! </figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/kylieandmaxsf.JPG" alt="Kylie and Max in San Francisco" />
+            <figcaption>my first time in san francisco!</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/kylieandmaxtahoe.JPG" alt="Kylie and Max in Tahoe" />
+            <figcaption>taking some fun photos in lake tahoe!</figcaption>
+          </figure>
+          <figure class="about-photo-frame about-photo-slot-tall">
+            <img src="assets/portfolio/about%20me/budapest.JPG" alt="Kylie at Heroes' Square in Budapest" />
+            <figcaption>heroes' square, budapest</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/emma.JPG" alt="Kylie with Emma" />
+            <figcaption>My parent's dog, Emma!</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/kylieandfriends.JPG" alt="Kylie with friends" />
+            <figcaption>Hanging out w/ friends</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/wonderfront.JPG" alt="Wonderfront event photo" />
+            <figcaption>Wonderfront festival</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/southwestflight.JPG" alt="Kylie on a Southwest flight" />
+            <figcaption>taking a short plane ride... somewhere...</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/austriasnow.JPG" alt="Kylie in Austria in the snow" />
+            <figcaption>trying to learn how to snowboard in austria :,)</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/reneeconcert.JPG" alt="Kylie at a Renee concert" />
+            <figcaption>Reneé Rapp concert in San Diego!</figcaption>
+          </figure> 
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/kylieandcousins.JPG" alt="Kylie with cousins" />
+            <figcaption>Having some fun at the farm with family. </figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/kyliebigtimerush.JPG" alt="Kylie at Big Time Rush" />
+            <figcaption>My Logan sign for the BTR concert :D</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/malcolmtodd.JPG" alt="Kylie at a Malcolm Todd concert" />
+            <figcaption>Malcolm Todd concert</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/kylieandmax.JPG" alt="Kylie and Max" />
+            <figcaption>Max and I hanging out</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/bailey.JPG" alt="Kylie with Bailey" />
+            <figcaption>My little baby boy, Bailey <3</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/kylieanddad.JPG" alt="Kylie and dad" />
+            <figcaption>having some fun at a football game w/ my dad.</figcaption>
+          </figure>
+          <figure class="about-photo-frame">
+            <img src="assets/portfolio/about%20me/ostrichlandkylie.JPG" alt="Kylie at Ostrichland" />
+            <figcaption>ostrichland!!!!</figcaption>
+          </figure>
         </div>
       </section>
-
-      <section class="section about-note">
-        <div>
-          <p class="section-label">Note</p>
-          <h2>This page can be as polished or weird as you want.</h2>
-        </div>
-        <p>
-          Once you add images, I can help turn this into a more scrapbook-like
-          page, a magazine-style bio page, or something more graphic and bold.
-        </p>
-      </section>
-
       <footer class="project-footer">
         <div class="project-footer-links">
           <a href="#top">Back to top</a>
@@ -120,5 +212,14 @@
         <p>© 2026 Kylie O'Donnell</p>
       </footer>
     </main>
+    <script>
+      const scrollTopPill = document.querySelector(".scroll-top-pill");
+      const updateScrollTopPill = () => {
+        scrollTopPill.classList.toggle("is-visible", window.scrollY > 520);
+      };
+
+      updateScrollTopPill();
+      window.addEventListener("scroll", updateScrollTopPill, { passive: true });
+    </script>
   </body>
 </html>
