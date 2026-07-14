@@ -19,13 +19,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="scroll-top-pill" href="#top" aria-label="Back to top">Top</a>
     <main>
       <section class="hero-shell" id="top" aria-labelledby="intro-title">
         <nav class="topbar" aria-label="Portfolio sections">
           <a class="brand" href="#top">Kylie O'Donnell</a>
           <div class="nav-links">
-            <a href="#work">Work</a>
-            <a href="#experience">Experience</a>
+            <details class="nav-dropdown">
+              <summary>Work</summary>
+              <div class="nav-dropdown-menu">
+                <a href="#work">Website Design</a>
+                <a href="#visual-title">Visual Design</a>
+                <a href="#video-title">Videos edited</a>
+              </div>
+            </details>
+            <a href="#skills">Tools</a>
+            <a href="#experience">Resume</a>
             <a href="#contact">Contact</a>
           </div>
         </nav>
@@ -48,7 +57,7 @@
                 implementation fluency.
               </p>
               <div class="hero-actions">
-                <a class="button primary" href="#work">View selected work</a>
+                <a class="button primary" href="#work">Website Design </a>
                 <a
                   class="button"
                   href="https://www.linkedin.com/in/kylieodonnell/"
@@ -83,7 +92,7 @@
 
       <section class="section" id="work" aria-labelledby="work-title">
         <div class="section-heading">
-          <p class="section-label">Selected work</p>
+          <p class="section-label">Website Design</p>
           <h2 id="work-title">Product, digital, and graphic design.</h2>
         </div>
 
@@ -116,7 +125,7 @@
             />
             <div class="feature-body">
               <p class="eyebrow">Product case study</p>
-              <h3>Kennedy Library occupancy counter</h3>
+              <h3>Kennedy Library Occupancy Counter</h3>
               <p>
                 A web-based concept for helping Cal Poly students make faster
                 study-space decisions using clearer occupancy information and
@@ -137,7 +146,7 @@
             />
             <div class="feature-body">
               <p class="eyebrow">Digital design system</p>
-              <h3>Productivity tracker system</h3>
+              <h3>Productivity Tracker</h3>
               <p>
                 Typography, color, components, buttons, icons, and form states
                 for a focused productivity tracking experience.
@@ -152,12 +161,13 @@
 
           <a class="feature-card" href="crib-onboarding.html">
             <img
-              src="assets/portfolio/la-5.jpg"
+              class="crib-thumb-image"
+              src="assets/portfolio/crib- welcome.png"
               alt="Crib onboarding flow portfolio page"
             />
             <div class="feature-body">
               <p class="eyebrow">Mobile UI</p>
-              <h3>Crib onboarding flow</h3>
+              <h3>Crib</h3>
               <p>
                 Mid-fidelity mobile prototype screens for account creation,
                 welcome-back moments, and a clean first-run product path.
@@ -174,7 +184,7 @@
 
       <section class="section visual-section" aria-labelledby="visual-title">
         <div class="section-heading">
-          <p class="section-label">Visual design range</p>
+          <p class="section-label">Visual Design</p>
           <h2 id="visual-title">Campaigns, pitch materials, and editorial work.</h2>
         </div>
 
@@ -185,7 +195,7 @@
               alt="Seattle Voice Lab social design examples"
             />
             <div>
-              <h3>Seattle Voice Lab social design</h3>
+              <h3>Seattle Voice Lab Social Design</h3>
               <p>
                 Instagram, Discord, TikTok, LinkedIn, and newsletter graphics
                 built for internal and external audiences.
@@ -217,7 +227,7 @@
               />
             </div>
             <div>
-              <h3>Editorial and experimental graphics</h3>
+              <h3>Editorial and Experimental Graphics</h3>
               <p>
                 Magazine covers, zines, band posters, Illustrator experiments,
                 and infographics with a strong editorial point of view.
@@ -231,7 +241,7 @@
               alt="GreenSight logo favicon"
             />
             <div>
-              <h3>GreenSight pitch and social graphics</h3>
+              <h3>GreenSight Pitch and Social Graphics</h3>
               <p>
                 Quick-turn marketing visuals, a trifold pitch poster, and Figma
                 product brainstorming during a software development internship.
@@ -243,7 +253,7 @@
 
       <section class="section video-section" aria-labelledby="video-title">
         <div class="section-heading">
-          <p class="section-label">Videos edited</p>
+          <p class="section-label">Videos Edited</p>
           <h2 id="video-title">Event storytelling and department media.</h2>
         </div>
 
@@ -258,7 +268,7 @@
           </div>
           <div class="video-body">
             <p class="eyebrow">Cal Poly CPE Department</p>
-            <h3>Annual banquet video</h3>
+            <h3>2024 CPE Banquet Video</h3>
             <p>
               Edited department event media for the Computer Science and
               Software Engineering community, supporting banquet storytelling
@@ -284,8 +294,8 @@
               ></iframe>
             </div>
             <div class="video-body">
-              <p class="eyebrow">Personal edit</p>
-              <h3>Year 1 recap</h3>
+              <p class="eyebrow">Personal Edit</p>
+              <h3>Year 1 Recap</h3>
               <p>
                 A square-format edit made from my first-year school photos,
                 originally created for Instagram as a personal recap.
@@ -309,8 +319,8 @@
               ></iframe>
             </div>
             <div class="video-body">
-              <p class="eyebrow">Personal edit</p>
-              <h3>Year 2 recap</h3>
+              <p class="eyebrow">Personal Edit</p>
+              <h3>Year 2 Recap</h3>
               <p>
                 A second-year recap edit using school photos, made to capture
                 the fun, personal side of editing and visual storytelling.
@@ -326,7 +336,7 @@
         </div>
       </section>
 
-      <section class="section skills-section" aria-labelledby="skills-title">
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
         <div>
           <p class="section-label">Tools and strengths</p>
           <h2 id="skills-title">
@@ -354,7 +364,7 @@
           </article>
 
           <article>
-            <h3>Marketing and content</h3>
+            <h3>Marketing and Content</h3>
             <div class="skill-cloud">
               <span>Social graphics</span>
               <span>Email design</span>
@@ -370,7 +380,7 @@
 
         <div class="skill-bottom">
           <article>
-            <h3>Frontend and web</h3>
+            <h3>Frontend and Web</h3>
             <div class="skill-cloud">
               <span>HTML</span>
               <span>CSS</span>
@@ -387,7 +397,7 @@
           </article>
 
           <article>
-            <h3>CMS and web operations</h3>
+            <h3>CMS and Web Operations</h3>
             <div class="skill-cloud">
               <span>WordPress</span>
               <span>Elementor</span>
@@ -400,7 +410,7 @@
           </article>
 
           <article>
-            <h3>Development and analytics</h3>
+            <h3>Development and Analytics</h3>
             <div class="skill-cloud">
               <span>Git</span>
               <span>GitLab CI/CD</span>
@@ -419,7 +429,7 @@
         aria-labelledby="experience-title"
       >
         <div class="section-heading">
-          <p class="section-label">Experience</p>
+          <p class="section-label">Resume</p>
           <h2 id="experience-title">
             Design, marketing, and development in production.
           </h2>
@@ -436,7 +446,7 @@
               aria-label="Close experience details"
               data-experience-close
             ></button>
-            <strong>Experience details</strong>
+            <strong>Experience Details</strong>
           </div>
           <div class="experience-dialog-body" id="experience-dialog-body"></div>
         </div>
@@ -851,6 +861,14 @@
           lastFocusedExperienceCard.focus();
         }
       });
+
+      const scrollTopPill = document.querySelector(".scroll-top-pill");
+      const updateScrollTopPill = () => {
+        scrollTopPill.classList.toggle("is-visible", window.scrollY > 520);
+      };
+
+      updateScrollTopPill();
+      window.addEventListener("scroll", updateScrollTopPill, { passive: true });
     </script>
   </body>
 </html>

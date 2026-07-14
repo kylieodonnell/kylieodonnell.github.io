@@ -87,14 +87,51 @@ strong {
   transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
 }
 
+.scroll-top-pill {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 2px solid var(--ink);
+  background: var(--yellow);
+  box-shadow: 4px 4px 0 var(--shadow);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity 160ms ease, transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.scroll-top-pill.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-top-pill:hover,
+.scroll-top-pill:focus-visible {
+  background: var(--mint);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+
 .nav-links {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .nav-links a,
+.nav-dropdown summary,
 .button,
 .demo-panel a,
 .demo-panel span,
@@ -107,6 +144,61 @@ strong {
 .nav-links a {
   padding: 10px 14px;
   transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown summary {
+  list-style: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.nav-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown[open] > summary,
+.nav-dropdown summary:hover,
+.nav-dropdown summary:focus-visible {
+  background: var(--mint);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--shadow);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  display: grid;
+  gap: 8px;
+  min-width: 240px;
+  padding: 10px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 6px 6px 0 var(--shadow);
+  z-index: 20;
+}
+
+.nav-dropdown:not([open]) .nav-dropdown-menu {
+  display: none;
+}
+
+.nav-dropdown-menu a {
+  padding: 10px 12px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus-visible {
+  background: var(--mint);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--shadow);
 }
 
 .brand:hover,
@@ -185,6 +277,14 @@ iframe:focus-visible {
   word-break: normal;
   hyphens: none;
   text-wrap: balance;
+}
+
+.crib-title span {
+  white-space: nowrap;
+}
+
+.crib-title span + span {
+  display: block;
 }
 
 .kicker,
@@ -410,6 +510,10 @@ a.feature-card {
 
 .base2-card-image {
   object-position: center 0%;
+}
+
+.crib-thumb-image {
+  object-position: center 63%;
 }
 
 .feature-placeholder {
@@ -1403,18 +1507,29 @@ a.feature-card {
   grid-column: 1 / -1;
 }
 
-.cpe-display-grid object {
+.cpe-display-figure {
   grid-column: 1 / -1;
-  width: 100%;
-  min-height: 900px;
+  margin: 0;
   border: 3px solid var(--ink);
   background: var(--paper);
   box-shadow: 8px 8px 0 var(--shadow);
 }
 
-.cpe-display-grid .project-pdf-note {
-  grid-column: 1 / -1;
-  margin-top: -4px;
+.cpe-display-figure object {
+  width: 100%;
+  min-height: 900px;
+  border: 0;
+  display: block;
+}
+
+.cpe-display-figure figcaption {
+  padding: 12px 14px;
+  border-top: 3px solid var(--ink);
+  background: var(--paper);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.3;
 }
 
 .crib-screens-section {
@@ -1515,6 +1630,13 @@ a.feature-card {
 
   .nav-links {
     justify-content: flex-start;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    min-width: 0;
+    box-shadow: none;
+    margin-top: 8px;
   }
 
   .hero-grid,
@@ -1635,6 +1757,12 @@ a.feature-card {
     width: min(100% - 24px, 1180px);
   }
 
+  .scroll-top-pill {
+    top: 12px;
+    right: 12px;
+    padding: 9px 12px;
+  }
+
   .desktop-window {
     box-shadow: 7px 7px 0 var(--shadow);
   }
@@ -1675,8 +1803,18 @@ a.feature-card {
   }
 
   .button,
-  .nav-links a {
+  .nav-links a,
+  .nav-dropdown summary {
     flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .nav-dropdown-menu a {
+    width: 100%;
     justify-content: center;
   }
 
@@ -1705,6 +1843,17 @@ a.feature-card {
   .visual-card img {
     border-right: 0;
     border-bottom: 3px solid var(--ink);
+  }
+
+  .abstract-heart-media {
+    border-right: 0;
+    border-bottom: 3px solid var(--ink);
+  }
+
+  .visual-card img.abstract-heart-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
   }
 
   .svl-newsletter-grid,
